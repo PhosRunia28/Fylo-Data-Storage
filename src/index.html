@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Fylo data storage</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-veryDarkBlue">
+    <div class="relative h-screen overflow-hidden">
+      <main
+        class="absolute left-1/2 top-1/2 z-30 mx-auto w-full max-w-md -translate-x-1/2 -translate-y-1/2 px-6 pb-12 lg:flex lg:max-w-5xl lg:gap-7 lg:pb-0"
+      >
+        <div
+          class="rounded-xl rounded-tr-[100px] bg-darkBlue px-12 py-12 lg:py-8 lg:pr-36"
+        >
+          <img src="./images/logo.svg" alt="logo" class="bg-cover bg-center" />
+          <div class="mt-8 flex items-center gap-6">
+            <div class="cursor-pointer rounded-md bg-veryDarkBlue p-3">
+              <img
+                src="./images/icon-document.svg"
+                alt="icon document"
+                class="h-[1.5rem] w-full max-w-[1.8rem] bg-cover bg-center"
+              />
+            </div>
+            <div class="cursor-pointer rounded-md bg-veryDarkBlue p-3">
+              <img
+                src="./images/icon-folder.svg"
+                alt="icon folder"
+                class="h-[1.5rem] w-full max-w-[1.8rem] bg-cover bg-center"
+              />
+            </div>
+            <div class="cursor-pointer rounded-md bg-veryDarkBlue p-3">
+              <img
+                src="./images/icon-upload.svg"
+                alt="icon upload"
+                class="h-[1.5rem] w-full max-w-[1.8rem] bg-cover bg-center"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative mt-8 flex flex-col rounded-xl bg-darkBlue px-6 pb-14 pt-10 font-raleway lg:flex-1 lg:px-10 lg:py-6"
+        >
+          <p class="pl-9 text-gray-300 lg:p-0">
+            You’ve used
+            <span class="font-bold text-white">815 GB</span> of your storage
+          </p>
+          <!-- bars -->
+          <div
+            class="relative my-3 h-8 w-full rounded-full bg-veryDarkBlue p-1"
+          >
+            <div
+              class="customBar absolute left-[5px] top-[4px] h-6 w-[80%] rounded-full bg-gradient-to-r from-[#ffa399] to-[#ff4d97]"
+            ></div>
+          </div>
+          <div class="flex w-full items-center justify-between">
+            <p class="text-sm font-semibold uppercase text-white">0 GB</p>
+            <p class="text-sm font-semibold uppercase text-white">1000 GB</p>
+          </div>
+          <!-- storage -->
+          <div
+            class="storage absolute left-1/2 top-[80%] mx-auto w-full max-w-[13rem] -translate-x-1/2 rounded-xl bg-white px-6 py-4 lg:-right-[11%] lg:-top-[45%] lg:left-auto"
+          >
+            <h2 class="flex items-center gap-2 text-5xl font-bold">
+              185
+              <span
+                class="text-sm font-semibold uppercase tracking-widest text-gray-400"
+                >GB left</span
+              >
+            </h2>
+          </div>
+        </div>
+      </main>
+      <!-- background pattern -->
+      <section class="absolute w-full overflow-hidden lg:-bottom-[5rem]">
+        <picture>
+          <source
+            srcset="./images/bg-desktop.png"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./images/bg-mobile.png"
+            alt="background pattern"
+            class="w-full bg-cover bg-center"
+          />
+        </picture>
+      </section>
+    </div>
+  </body>
+</html>
